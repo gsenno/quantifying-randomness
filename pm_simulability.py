@@ -1,11 +1,8 @@
 from picos.modeling.problem import Problem, SolutionFailure
 import numpy as np
 from picos.expressions.variables import HermitianVariable, RealVariable
-from itertools import product
-from picos.expressions.algebra import trace, kron
+from picos.expressions.algebra import trace
 import qutip as qt
-from numpy.linalg.linalg import matrix_rank
-from bokeh.ext import build
 
 def isPMSimulable(userPOVM):
     problem = Problem()
